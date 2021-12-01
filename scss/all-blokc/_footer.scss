@@ -1,0 +1,75 @@
+.footer {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 72px 96px 46px 95px;
+        background-image: url(/images/hamburger-bacground.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+    }
+
+    &__top--box {
+        max-width: 459px;
+    }
+
+     &__top--title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+    &__top--desc {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+}
+// =========================================================================
+@media only screen and (max-width:815px) {
+  .footer {
+      &__top {
+          padding: 57px 24px;
+          flex-direction: column;
+          text-align: center;
+      }
+
+      &__top--title {
+          margin-top: 0;
+      }
+
+      &__top--desc {
+        margin-bottom: 32px;
+      }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ================================================================

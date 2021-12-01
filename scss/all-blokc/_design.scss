@@ -1,0 +1,121 @@
+.design {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    &__web {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        margin: 0;
+        margin-right: 28px  ;
+        width:49%;
+        height: 640px;
+        background-image:url(../images/web-disagn.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        border-radius: 15px ;
+
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 24px;
+        padding: 0;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        margin: 0;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__wrapp {
+        padding: 0;
+        width: 48%;
+    }
+
+    &__app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 308px;
+        padding: 15px;
+        margin: 0;
+        margin-bottom: 24px;
+        background-image: url(../images/app-design.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        border-radius:15px;
+    }
+
+    &__graphic {
+        padding: 25px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 308px;
+        background-image: url(/images/graphic-disagn.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        border-radius:15px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width:871px) {
+  .design {
+    &__container {
+        display: flex;
+        flex-direction: column  ;
+    }
+
+    &__web {
+        margin-bottom: 24px;
+        width:100%;
+        height: 200px;
+        background-position-y: 60%;
+        // border-radius:10px
+    }
+
+    &__wrapp {
+        width: 100%;
+    }
+
+    &__app {
+        width: 100%;
+        height: 200px;
+        border-radius:10px
+    }
+
+    &__graphic {
+        width: 100%;
+        height: 200px;
+        // border-radius:10px
+    }
+
+
+  }
+}

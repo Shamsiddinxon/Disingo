@@ -1,0 +1,113 @@
+.header {
+    padding: 64px 0 67px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo--img {
+        width: 202px;
+        height: 27px;
+    }
+
+    &__hamburger {
+        display: none;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/bars-solid.svg);
+        background-repeat: no-repeat;
+        background-color: #fff;
+        border:none;
+        transition: 0.2s;
+    }
+}
+
+.sitenav {
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+    &__item + &__item {
+        margin-left: 42px;
+    }
+
+    &__linc {
+        text-decoration: none;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        color: #333136;
+    }
+
+    &__linc:hover {
+        opacity: 0.8;
+    }
+}
+
+@media only screen and (max-width:638px) {
+    .header {
+
+        &__container{
+            position: relative;
+        }
+        &__hamburger {
+            display: inline-block;
+        }
+    }
+
+    .sitenav {
+      display: none;
+    }
+
+    .header__open .sitenav {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 58px;
+        left: 10px;
+        right:10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width :85%;
+        width: 100%;
+        margin: 0 auto;
+        background-color:#0E8784;
+        background-image:url(../images/hamburger-bacground.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        opacity: 0.99;
+        border-radius: 10px;
+        border: 1px solid #0E8784;
+    }
+
+    .header__open .sitenav__list {
+        align-items:center;
+        flex-direction: column;
+        padding: 15px 0;
+        color:white;
+    }
+
+    .header__open .sitenav__item {
+        margin: 0;
+        margin: 10px 0;
+    }
+
+    .header__open .sitenav__linc {
+        color: white;
+        font-family: Fraunces;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .header__open .header__hamburger {
+        background-image:url(../images/times-solid.svg);
+    }
+}

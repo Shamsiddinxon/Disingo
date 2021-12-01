@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400&family=Spartan:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/Oval.png">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Starter Scss</title>
+    <title>Desingo</title>
 </head>
+
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__container">
+            <a class="header__logo" href="#">
+                <img class="header__logo--img" src="./images/logo.svg" alt="site logo">
+            </a>
+
+            <nav class="sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a href="" class="sitenav__linc">OUR COMPANY</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a href="" class="sitenav__linc">LOCATIONS</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a href="" class="sitenav__linc">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__hamburger"></button>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__wrapp">
+                        <h2 class="hero__heading">Award-winning custom designs and digital branding solutions</h2>
+
+                        <p class="hero__desc">With over 10 years in the industry, we are experienced in creating fully
+                            responsive websites, app design, and engaging brand experiences. Find out more about our
+                            services.</p>
+
+                        <button class="button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESIGN -->
+        <section class="design">
+            <div class="container design__container">
+
+                <div class="design__web">
+                    <h3 class="design__title">WEB DESIGN</h3>
+                    <p class="design__desc">VIEW PROJECTS</p>
+                </div>
+
+                <div class="design__wrapp">
+                    <div class="design__app">
+                        <h3 class="design__title">APP DESIGN</h3>
+                        <p class="design__desc">VIEW PROJECTS</p>
+                    </div>
+                    <div class="design__graphic">
+                        <h3 class="design__title">GRAPHIC DESIGN</h3>
+                        <p class="design__desc">VIEW PROJECTS</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <div class="container">
+                <ul class="about__list">
+                    <li class="about__item">
+                        <img class="about__img about__img1" src="./images/about1.svg" alt="" class="about__img" width="202" height="202">
+
+                        <div>
+                            <h4 class="about__title">PASSIONATE</h4>
+
+                        <p class="abour__desc">Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.</p>
+                        </div>
+                    </li>
+
+                    <li class="about__item about__item1">
+                        <img class="about__img" src="./images/about2.svg" alt="" class="about__img" width="202" height="202">
+
+                       <div>
+                        <h4 class="about__title">RESOURCEFUL</h4>
+
+                        <p class="abour__desc">Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+                       </div>
+                    </li>
+
+                    <li class="about__item about__item1">
+                        <img class="about__img" src="./images/about3.svg" alt="" class="about__img" width="202" height="202">
+
+                        <div>
+                            <h4 class="about__title">FRIENDLY</h4>
+
+                        <p class="abour__desc"> We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapp">
+                <div class="footer__top">
+                    <div class="footer__top--box">
+                        <h2 class="footer__top--title">Let’s talk about your project</h2>
+
+                    <p class="footer__top--desc">Ready to take it to the next level? Contact us today and find outhow our expertise can help your business grow.</p>
+                    </div>
+
+                    <button class="button">Get in touch</button>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
+<script src="./js/index.js"></script>
+
 </html>

@@ -1,0 +1,111 @@
+.hero {
+    &__wrapper {
+        padding: 99px 474px 185px 97px;
+        background-image:url(../images/hero-img.png);
+        background-repeat:no-repeat;
+        background-position:top right;
+        background-size:1111px 640px;
+        top: -50px;
+        border-radius:10px;
+    }
+
+    &__wrapp {
+        width: 100%;
+        max-width: 540px;
+
+    }
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 21px;
+        padding: 0;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        width: 100%;
+        max-width: 445px;
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width:1003px) {
+    .hero {
+        &__wrapper {
+            padding: 99px 434px 185px 97px;
+        }
+    }
+}
+
+@media only screen and (max-width:918px) {
+    .hero {
+        &__wrapper {
+            padding: 99px 400px 185px 97px;
+        }
+    }
+}
+
+@media only screen and (max-width:870px) {
+    .hero {
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 60px 75px 600px 75px;
+            background-size:cover;
+            background-position: -940px 0;
+            background-position-y: 220px;
+
+            background-color:#E7816B;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__wrapp {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+        }
+    }
+}
+
+@media only screen and (max-width:807px) {
+    .hero {
+        &__wrapper {
+            background-position: -990px 0;
+            background-position-y: 220px;
+        }
+    }
+}
+
+@media only screen and (max-width:730px) {
+    .hero {
+        &__wrapper {
+            background-position: -1020px 0;
+            background-position-y: 220px;
+        }
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .hero {
+        &__wrapper {
+            background-position: -1100px 0;
+            background-position-y: 250px;
+            // background-size:200px;
+        }
+    }
+}
