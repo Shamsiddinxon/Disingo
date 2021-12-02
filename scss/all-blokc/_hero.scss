@@ -105,7 +105,24 @@
         &__wrapper {
             background-position: -1100px 0;
             background-position-y: 250px;
-            // background-size:200px;
+        }
+    }
+}
+
+@media only screen and (max-width:665px) {
+    // .hero {
+    //     &__container {
+    //         background-color: none;
+    //         background-image: url(../images/hero-700px.png);
+    //         background-repeat: no-repeat;
+    //     }
+    // }
+}
+
+@media only screen and (max-width:623px) {
+    .hero {
+        &__wrapper {
+            background-position: 100% 0px;
         }
     }
 }

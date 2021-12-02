@@ -1,4 +1,11 @@
 .footer {
+    // position: relative;
+    background-color: #1D1C1E;
+
+    &__wrapp{
+        position: relative;
+    }
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -7,7 +14,12 @@
         background-image: url(/images/hamburger-bacground.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: top right;
         border-radius: 15px;
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
     }
 
     &__top--box {
@@ -29,27 +41,136 @@
     }
 
 }
-// =========================================================================
-@media only screen and (max-width:815px) {
-  .footer {
-      &__top {
-          padding: 57px 24px;
-          flex-direction: column;
-          text-align: center;
-      }
+// ==================================================================
+.footer {
+    padding: 144px 0 72px;
 
-      &__top--title {
-          margin-top: 0;
-      }
+    &__nav--container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 40px;
+    }
 
-      &__top--desc {
-        margin-bottom: 32px;
-      }
+    &__linc {
+        color :#FFFFFF;
+    }
 
+
+
+}
+
+.bottom {
+    &__bottom {
+        margin-top: 31px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom-box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 60%;
+        width: 100%;
+    }
+
+    &__ofise--desc {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        margin:0 0 4px;
+    }
+
+    &__ofise {
+        margin-right: 50px;
+    }
+
+    &__ofise--desc:hover {
+        opacity: 0.8;
+    }
+
+    &__linc {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        // margin-left: 160px;
+    }
+
+    &__link + &__link {
+        margin-left: 16px;
+    }
+
+
+}
+
+@media only screen and (max-width:844px) {
+  .bottom__bottom-box {
+      min-width: 70%;
+      margin-bottom: 40px;
   }
 }
 
+@media only screen and (max-width:681px) {
+  .bottom__bottom {
+      flex-direction: column;
+      text-align: center;
 
+  }
+
+  .bottom__bottom-box {
+    min-width: 100%;
+    justify-content: space-between;
+}
+}
+
+@media only screen and (max-width:641px) {
+    .footer__nav--container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sitenav {
+        margin-top: 50px;
+        &__item + &__item {
+            margin-left: 0;
+        }
+
+        &__item {
+            margin-bottom: 32px;
+        }
+    }
+
+    .sitenav1 {
+        display: inline-block;
+        display: flex;
+    }
+
+    .sitenav__list {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:476px) {
+    .bottom__bottom-box {
+        flex-direction: column;
+    }
+
+    .bottom__ofise {
+        margin: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:363px) {
+    .footer__top {
+        top:-470px;
+    }
+}
 
 
 
@@ -73,3 +194,22 @@
 
 
 // ================================================================
+
+@media only screen and (max-width:815px) {
+    .footer {
+        &__top {
+            padding: 57px 24px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__top--title {
+            margin-top: 0;
+        }
+
+        &__top--desc {
+          margin-bottom: 32px;
+        }
+
+    }
+  }
